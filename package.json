@@ -1,0 +1,46 @@
+{
+  "name": "trello-game-backlog",
+  "sideEffects": false,
+  "version": "1.0.0",
+  "description": "Track your video game backlog in Trello",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack -d",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts --fix",
+    "bundle-report": "webpack-bundle-analyzer --port 4200 docs/js/stats.json"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.6.2",
+    "@babel/types": "^7.6.1",
+    "@types/forever-agent": "^0.6.0",
+    "@types/jest": "^24.0.18",
+    "@types/jquery": "^3.3.31",
+    "@types/node": "^12.7.12",
+    "@types/openid": "^2.0.1",
+    "@types/request": "^2.48.3",
+    "@types/tough-cookie": "^2.3.6",
+    "@typescript-eslint/eslint-plugin": "^2.3.2",
+    "@typescript-eslint/parser": "^2.3.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "source-map-loader": "^0.2.4",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.3",
+    "webpack": "^4.39.1",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-cli": "^3.3.6"
+  },
+  "author": "Emma Goto",
+  "license": "MIT",
+  "dependencies": {
+    "@openid/appauth": "^1.2.6",
+    "steam-weblogin": "^1.0.1"
+  }
+}

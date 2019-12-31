@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://p.trellocdn.com/power-up.min.css">
+    <link rel="stylesheet" href="./settings.css">
+    <link rel="stylesheet" href="sortable-theme-minimal.css" />
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://p.trellocdn.com/power-up.min.js"></script>
+    <script src="https://trello.com/1/client.js?key=<KEY_HERE>"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/sortable.min.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="steam-container"></div>
+      <div id="game-table-container">
+        <table id="game-table" class="sortable-theme-minimal" data-sortable>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Name</th>
+              <th data-sorted="true">Hours Played</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <button id="add-games">Add games</button>
+    </div>
+  </body>
+</html>

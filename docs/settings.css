@@ -1,0 +1,36 @@
+#wrapper {
+    min-height: 300px;
+    padding: 8px;
+}
+
+#steam-container {
+    display: flex;
+    align-items: center;
+}
+
+#steam-auth:hover {
+    cursor: pointer;
+}
+
+#steam-avatar {
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+#steam-settings {
+    background: transparent url(img/meatballs.svg) 6px 2px/20px 20px no-repeat;
+    width: 32px;
+    min-width: 32px;
+    height: 24px;
+    margin-left: auto;
+}
+
+#steam-settings:hover {
+    background-color: #CCCCCC;
+    border-radius: 4px;
+}
+
+#game-table-container {
+    max-height: 300px;
+    overflow-y: scroll;
+}
