@@ -1,7 +1,5 @@
-# TypeScript Trello Power-Up Starter
-Get started with creating Trello Power-Ups using TypeScript.
-
-Remember to run `npm install`!
+# Gaming Backlog for Trello
+This Power-Up allows users to add Steam games as cards to their Trello board.
 
 ## Testing the power-up locally with Jekyll and ngrok
 Github pages uses Jekyll so you'll need to do a few things to test this locally:
@@ -21,7 +19,7 @@ Make sure to run `npm run build` before pushing changes. This will use the setti
 We store our code in `/docs` instead of `/public` as this is a limitation of the way Github Pages works.
 
 ## Publishing this Power_up
-This Power-Up's docs folder is published using Github Pages and can be accessed from this URL: https://emgoto.github.io/trello-sla/ You'll need to put that link in your Trello Power-ups admin page.
+This Power-Up's docs folder is published using Github Pages and can be accessed from this URL: https://emgoto.github.io/gaming-backlog/ You'll need to put that link in your Trello Power-ups admin page.
 
 ## Tests
 `npm test`

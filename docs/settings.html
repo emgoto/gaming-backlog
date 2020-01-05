@@ -15,19 +15,70 @@
   <body>
     <div id="wrapper">
       <div id="steam-container"></div>
-      <div id="game-table-container">
-        <table id="game-table" class="sortable-theme-minimal" data-sortable>
-          <thead>
-            <tr>
-              <th></th>
-              <th>Name</th>
-              <th data-sorted="true">Hours Played</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+      <div id="manual-add-wrapper" class="hidden">
+        <div id="manual-add-container">
+          Add games from Steam with either the game's URL on the Steam store or its AppID.
+          <div class="manual-add">
+            <div class="manual-add-search">
+              <input id="manual-add-input" placeholder="Steam store URL or AppID"></input>
+              <button id="manual-add">Search</button>
+            </div>
+          
+            <span id="manual-add-not-found" class="hidden">
+              Unfortunately the Steam API failed to return any data on this game (this can often happen with newer games).
+              If the image below is correct, you can manually add the game name and create the card.
+            </span>
+  
+            <span id="manual-add-error" class="hidden">
+              The URL or AppID you entered was incorrect.
+            </span>
+            <div id="manual-add-create-wrapper" class="hidden">
+              <div id="manual-add-create">
+                <div id="confirm-game"></div>
+                <input id="manual-add-name-input" placeholder="Game name here"></input>
+                <div id="manual-add-game">
+                  Add to list: <select id="manual-add-games-list"></select><button id="manual-create-card">Create card</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <button id="add-games">Add games</button>
+      <div id="game-table-wrapper">
+        <div id="game-table-container">
+          <table id="game-table" class="sortable-theme-minimal" data-sortable>
+            <thead>
+              <tr>
+                <th width="32px"></th>
+                <th>Name</th>
+                <th width="120px" data-sorted="true">Hours Played</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <tr>
+                <td><input type="checkbox"></input></td>
+                <td>Prince of Persia</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></input></td>
+                <td>Prince of Persia</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></input></td>
+                <td>Prince of Persia</td>
+                <td>3</td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+        <div class="add-games">
+          Add to list: 
+          <select id="add-games-list"></select>
+          <button id="add-games">Create cards</button>
+        </div class="add-games">
+      </div>
     </div>
   </body>
 </html>

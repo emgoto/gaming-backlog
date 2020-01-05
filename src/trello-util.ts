@@ -2,8 +2,6 @@ declare const axios: any;
 
 import { SteamGame, SteamUser } from './steam-util';
 
-const key = '783430b1c1096fa1119cfb1b69db7d50';
-
 type List = {
     id: string;
     name: string;
@@ -35,7 +33,8 @@ export const getLists = async (t): Promise<List[] | void> => {
     });
   };
 
-const createCard = async (t: any, listId: string, game: SteamGame, token: string): Promise<void> => {
+  //TODO: replace token2
+export const createCard = async (t: any, listId: string, game: SteamGame, token2: string): Promise<void> => {
     const data = {
         idList: listId,
         key,
@@ -44,6 +43,7 @@ const createCard = async (t: any, listId: string, game: SteamGame, token: string
         pos: 'bottom',
         urlSource: `https://steamcdn-a.akamaihd.net/steam/apps/${game.id}/header.jpg`,
     };
+
     const url = `https://api.trello.com/1/cards`;
 
     // TODO: Handling if Trello returns a 429 for too many requests
@@ -59,10 +59,11 @@ const createCard = async (t: any, listId: string, game: SteamGame, token: string
 };
 
 export const createCards = async (t: any, listId: string, games: SteamGame[]): Promise<void> => {
-    const token = await getToken(t);
-    if (!token) {
-        return;
-    }
+    // TODO: For whatever reason, allowed origins can't be changed. maybe because it's a new account
+    // const token = await getToken(t);
+    // if (!token) {
+    //     return;
+    // }
 
     const cards = games.map(game => 
         createCard(t, listId, game, token)

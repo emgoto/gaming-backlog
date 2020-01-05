@@ -6,6 +6,7 @@
 #steam-container {
     display: flex;
     align-items: center;
+    margin-bottom: 16px;
 }
 
 #steam-auth:hover {
@@ -33,4 +34,99 @@
 #game-table-container {
     max-height: 300px;
     overflow-y: scroll;
+}
+
+.add-games {
+    color: #C0C0C0;
+    float: right;
+}
+
+#manual-add-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.manual-add {
+    display: flex;
+    margin-top: 8px;
+    flex-direction: column;
+}
+
+#manual-add {
+    margin-top: 0;
+    height: 36px;
+    margin-left: 8px;
+}
+
+#manual-add-game {
+    color: #C0C0C0;
+}
+
+.manual-add-search {
+    display:flex;
+    align-self: center;
+    margin-bottom: 8px;
+}
+
+#manual-add-create {
+    display: flex;
+    flex-direction: column;
+}
+
+#manual-add-name-input {
+    width: 200px;
+    align-self: center;
+}
+
+#manual-add-error,#manual-add-not-found {
+    color: #C0C0C0;
+    width: 500px;
+    margin-bottom: 8px;
+}
+
+input[type="checkbox"] {
+    box-shadow: inset 0 0 0 2px #dfe1e6;
+    transform: scale(1.4);
+}
+
+input:checked {
+    color: #fff;
+    box-shadow: inset 0 0 0 2px #0079bf;
+    background: #0079bf url(img/tick.svg) 1px 1px/16px 16px;
+}
+
+table {
+    table-layout: fixed;
+}
+
+td, th {
+    padding: 0;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+th {
+    background-color:#fff;
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+
+th:hover:not(:first-child) {
+    background-color:  	#EBECEE;
+    cursor: pointer;
+}
+
+tr:hover {
+    background-color: #f7f8fa;
+}
+
+
+td, thead, table, th {
+    border: 0;
 }

@@ -71,11 +71,43 @@ export const getOwnedGames = async (t, id?: string): Promise<SteamGame[]> => {
     }).catch((e) => {
         console.log('Error while getting owned Steam games', e);
         if (e && e.response && e.response.status && e.response.status === 401) {
+            // If we're returning 401, it means the profile is private.
             // This shouldn't happen, but we can make the user remove their auth and start over
             setSteamUser(t, undefined);
         }
     });
   };
+
+export const getGame = async (id: string): Promise<string | null | void> => {
+    const url = `${serverURL}/game?id=${id}`
+
+    return axios.get(url).then((response: { data: {response: string | null}}) => {
+        return response.data.response;
+    }).catch(e => {
+        if (e && e.response && e.response.status && e.response.status === 404) {
+            return undefined;
+        }
+    });
+};
+
+
+  export const getAppId = (url: string): string | void => {
+      const numbersOnly = new RegExp('^[0-9]+$');
+      const numbersResult = numbersOnly.exec(url);
+
+      if (numbersResult) {
+        return numbersResult[0]
+      }
+
+      const regex = new RegExp('app\/([0-9]+)');
+      const urlResult = regex.exec(url);
+
+      if (!urlResult || urlResult && urlResult.length !== 2) {
+          return undefined;
+      }
+
+      return urlResult[1];
+  }
 
 
 
