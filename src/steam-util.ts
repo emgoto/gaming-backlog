@@ -2,7 +2,8 @@ declare const axios: any;
 
 import { getSteamUser, setSteamGameCache } from './trello-util';
 
-const serverURL = 'https://trello-game-backlog.herokuapp.com';
+// const serverURL = 'https://trello-game-backlog.herokuapp.com';
+const serverURL = 'http://backlog.emgoto.com';
 
 export type SteamGame = {
     id: number;
