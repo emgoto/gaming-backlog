@@ -4,9 +4,9 @@
   "warnings": [
   ],
   "version": "4.41.0",
-  "hash": "7a6ab859e627b8f4c867",
-  "time": 3131,
-  "builtAt": 1580379944936,
+  "hash": "729f05897cd884caca4b",
+  "time": 34,
+  "builtAt": 1580412947283,
   "publicPath": "",
   "outputPath": "/Users/emma/src/trello-game-backlog/docs/js",
   "assetsByChunkName": {
@@ -17,7 +17,7 @@
   "assets": [
     {
       "name": "auth.js",
-      "size": 15771,
+      "size": 16488,
       "chunks": [
         "auth"
       ],
@@ -39,11 +39,11 @@
       ],
       "info": {
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "settings.js",
-      "size": 50205,
+      "size": 50159,
       "chunks": [
         "settings"
       ],
@@ -52,7 +52,7 @@
       ],
       "info": {
       },
-      "emitted": true
+      "emitted": false
     }
   ],
   "filteredAssets": 0,
@@ -138,14 +138,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 4380,
+      "size": 4697,
       "names": [
         "auth"
       ],
       "files": [
         "auth.js"
       ],
-      "hash": "fabd8ca37906f60bb018",
+      "hash": "ce2d9b3eb9cc0c132eb0",
       "siblings": [
       ],
       "parents": [
@@ -161,7 +161,7 @@
           "name": "./src/auth.ts",
           "index": 4,
           "index2": 4,
-          "size": 1249,
+          "size": 1566,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -203,7 +203,7 @@
           "index2": 0,
           "size": 3131,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -430,7 +430,7 @@
     },
     {
       "id": "index",
-      "rendered": true,
+      "rendered": false,
       "initial": true,
       "entry": true,
       "size": 5395,
@@ -458,7 +458,7 @@
           "index2": 1,
           "size": 2264,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -498,7 +498,7 @@
           "index2": 0,
           "size": 3131,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -725,17 +725,17 @@
     },
     {
       "id": "settings",
-      "rendered": true,
+      "rendered": false,
       "initial": true,
       "entry": true,
-      "size": 17678,
+      "size": 17680,
       "names": [
         "settings"
       ],
       "files": [
         "settings.js"
       ],
-      "hash": "2f6aeff2326727ecade5",
+      "hash": "3c047d0deb93c64a5f42",
       "siblings": [
       ],
       "parents": [
@@ -751,9 +751,9 @@
           "name": "./src/settings.ts",
           "index": 2,
           "index2": 3,
-          "size": 11510,
+          "size": 11512,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -793,7 +793,7 @@
           "index2": 2,
           "size": 3037,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -878,7 +878,7 @@
           "index2": 0,
           "size": 3131,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1111,7 +1111,7 @@
       "name": "./src/auth.ts",
       "index": 4,
       "index2": 4,
-      "size": 1249,
+      "size": 1566,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -1153,7 +1153,7 @@
       "index2": 1,
       "size": 2264,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1191,9 +1191,9 @@
       "name": "./src/settings.ts",
       "index": 2,
       "index2": 3,
-      "size": 11510,
+      "size": 11512,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1233,7 +1233,7 @@
       "index2": 2,
       "size": 3037,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1318,7 +1318,7 @@
       "index2": 0,
       "size": 3131,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
