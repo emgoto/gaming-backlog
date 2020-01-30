@@ -41,6 +41,7 @@
   "license": "MIT",
   "dependencies": {
     "@openid/appauth": "^1.2.6",
-    "steam-weblogin": "^1.0.1"
+    "steam-weblogin": "^1.0.1",
+    "serialize-javascript": ">=2.1.1"
   }
 }
