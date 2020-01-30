@@ -1,14 +1,13 @@
 declare const TrelloPowerUp: any;
 const t = TrelloPowerUp.iframe();
-declare const Trello: any;
 declare const axios: any;
 declare const Sortable: any;
 
-import { setToken, getSteamUser, setSteamUser, getSteamGameCache, createCard, createCards, getToken, setSteamGameCache } from './trello-util';
+import { getSteamUser, setSteamUser, getSteamGameCache, createCard, createCards, getToken, setSteamGameCache } from './trello-util';
 import { getOwnedGames, SteamUser, SteamGame, getAppId, getGame } from './steam-util';
 
-const serverURL = 'https://trello-game-backlog.herokuapp.com/';
-const clientURL = 'https://emgoto.github.io/gaming-backlog/';
+const serverURL = 'https://trello-game-backlog.herokuapp.com';
+const clientURL = 'https://emgoto.github.io/gaming-backlog';
 
 // Cache for games while user has the settings page open
 let cachedGames;
@@ -17,7 +16,6 @@ let cachedGames;
 let isShowingManualAdd = false;
 
 // Selectors
-const STEAM_CONTAINER_ID = 'steam-container';
 const MEATBALL_MENU_ID = 'meatball-menu';
 const STEAM_AUTH_ID = 'steam-auth';
 
