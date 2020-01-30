@@ -1,8 +1,8 @@
 declare const axios: any;
 
-import { setSteamUser, getSteamUser, setSteamGameCache } from './trello-util';
+import { getSteamUser, setSteamGameCache } from './trello-util';
 
-const serverURL = 'http://localhost:3000';
+const serverURL = 'https://trello-game-backlog.herokuapp.com';
 
 export type SteamGame = {
     id: number;
@@ -72,8 +72,9 @@ export const getOwnedGames = async (t, id?: string): Promise<SteamGame[]> => {
         console.log('Error while getting owned Steam games', e);
         if (e && e.response && e.response.status && e.response.status === 401) {
             // If we're returning 401, it means the profile is private.
-            // This shouldn't happen, but we can make the user remove their auth and start over
-            setSteamUser(t, undefined);
+        } else if (e && !e.response) {
+            console.log('server is down');
+            //TODO: error handling for if server is down
         }
     });
   };
@@ -90,24 +91,23 @@ export const getGame = async (id: string): Promise<string | null | void> => {
     });
 };
 
+export const getAppId = (url: string): string | void => {
+    const numbersOnly = new RegExp('^[0-9]+$');
+    const numbersResult = numbersOnly.exec(url);
 
-  export const getAppId = (url: string): string | void => {
-      const numbersOnly = new RegExp('^[0-9]+$');
-      const numbersResult = numbersOnly.exec(url);
+    if (numbersResult) {
+    return numbersResult[0]
+    }
 
-      if (numbersResult) {
-        return numbersResult[0]
-      }
+    const regex = new RegExp('app\/([0-9]+)');
+    const urlResult = regex.exec(url);
 
-      const regex = new RegExp('app\/([0-9]+)');
-      const urlResult = regex.exec(url);
+    if (!urlResult || urlResult && urlResult.length !== 2) {
+        return undefined;
+    }
 
-      if (!urlResult || urlResult && urlResult.length !== 2) {
-          return undefined;
-      }
-
-      return urlResult[1];
-  }
+    return urlResult[1];
+}
 
 
 

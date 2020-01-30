@@ -1,6 +1,6 @@
 #wrapper {
-    min-height: 300px;
     padding: 8px;
+    min-height: 150px;
 }
 
 #steam-container {
@@ -9,8 +9,20 @@
     margin-bottom: 16px;
 }
 
+#steam-container img {
+    float:right;
+}
+
+#steam-auth-container {
+    height: 35px;
+}
+
 #steam-auth:hover {
     cursor: pointer;
+}
+
+#steam-logged-in {
+    flex:1;
 }
 
 #steam-avatar {
@@ -18,7 +30,7 @@
     margin-right: 8px;
 }
 
-#steam-settings {
+#meatball-menu {
     background: transparent url(img/meatballs.svg) 6px 2px/20px 20px no-repeat;
     width: 32px;
     min-width: 32px;
@@ -26,7 +38,7 @@
     margin-left: auto;
 }
 
-#steam-settings:hover {
+#meatball-menu:hover {
     background-color: #CCCCCC;
     border-radius: 4px;
 }
@@ -36,16 +48,20 @@
     overflow-y: scroll;
 }
 
-.add-games {
+#add-games {
     color: #C0C0C0;
-    float: right;
+    background-color: #F4F5F7;
+    display: flex;
+    height: 48px;
+    align-items: center;
+    padding: 8px;
+    justify-content: flex-end;
+    border-radius: 4px;
 }
 
 #manual-add-container {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    text-align: center;
 }
 
 .hidden {
@@ -58,36 +74,65 @@
     flex-direction: column;
 }
 
+.manual-add b {
+    margin: 0 8px;
+}
+
 #manual-add {
     margin-top: 0;
     height: 36px;
-    margin-left: 8px;
+    margin: 0 8px;
 }
 
-#manual-add-game {
-    color: #C0C0C0;
+#manual-add-games-list {
+    margin: 0;
+}
+
+#confirm-game {
+    height: 40px;
+    width: 85px;
+    background-color: rgba(9,30,66,.04); 
 }
 
 .manual-add-search {
     display:flex;
-    align-self: center;
-    margin-bottom: 8px;
+    align-items: center;
+    color: #A5ADBA;
+    margin: 8px;
+}
+
+#manual-add-input {
+    margin-bottom: 0;
+    width: 250px;
 }
 
 #manual-add-create {
     display: flex;
-    flex-direction: column;
+    background-color: #F4F5F7;
+    padding: 8px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #manual-add-name-input {
     width: 200px;
-    align-self: center;
+    height: 40px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+}
+
+#manual-create-card {
+    margin-left: 56px;
+    margin-top: 0px;
+    height: 40px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 #manual-add-error,#manual-add-not-found {
     color: #C0C0C0;
-    width: 500px;
-    margin-bottom: 8px;
+    margin: 8px;
 }
 
 input[type="checkbox"] {
@@ -129,4 +174,20 @@ tr:hover {
 
 td, thead, table, th {
     border: 0;
+}
+
+.select-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #A7A7A7;
+}
+
+#add-games-button {
+    height: 40px;
+    margin-top: 0;
+}
+
+#profile-error-message {
+    color: #C0C0C0;
+    margin: 16px 80px;
 }

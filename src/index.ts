@@ -7,13 +7,23 @@ TrelloPowerUp.initialize({
   'board-buttons': function (t) {
     return [{
       text: 'Backlog',
-      callback: (): void => t.modal({
-        url: './settings.html',
-        height: 360,
-        fullscreen: false,
-        title: 'Gaming Backlog'
-      }),
-      condition: 'edit'
+      callback: async (t) => {
+        const token = await getToken(t);
+        if (!token) {
+          return t.popup({
+            title: 'Gaming Backlog',
+            url: './auth.html',
+            height: 120,
+          });
+        }
+
+        return t.modal({
+          url: './settings.html',
+          height: 360,
+          fullscreen: false,
+          title: 'Gaming Backlog'
+        });
+      },
     }];
   },
   'authorization-status': function(t, options){
