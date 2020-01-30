@@ -11,14 +11,13 @@ function onAuthenticate() {
     expiration: "never",
     return_url:"https://emgoto.github.io/gaming-backlog/", 
     success: () => {
-      setToken(t, Trello.token());
-      return t.closePopup().then(() => {
-        return t.modal({
+      return setToken(t, Trello.token()).then(() => {
+        t.modal({
           url: './settings.html',
           height: 360,
           fullscreen: false,
           title: 'Gaming Backlog'
-        });
+        }).then(() => t.closePopup());
       });
     },
     error: (e) => { console.log('Authentication error', e)},
