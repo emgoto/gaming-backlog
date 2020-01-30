@@ -10,9 +10,9 @@ function onAuthenticate() {
     name: "Gaming Backlog",
     expiration: "never",
     return_url:"https://emgoto.github.io/gaming-backlog/", 
-    success: (t2) => {
+    success: () => {
       setToken(t, Trello.token());
-      return t2.closePopup().then(() => {
+      return t.closePopup().then(() => {
         return t.modal({
           url: './settings.html',
           height: 360,
