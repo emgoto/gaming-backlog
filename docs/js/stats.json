@@ -4,9 +4,9 @@
   "warnings": [
   ],
   "version": "4.41.0",
-  "hash": "8d96790b00c202c57505",
-  "time": 167,
-  "builtAt": 1580524510047,
+  "hash": "a92b85f80b22163d320d",
+  "time": 45,
+  "builtAt": 1580528329168,
   "publicPath": "",
   "outputPath": "/Users/emma/src/trello-game-backlog/docs/js",
   "assetsByChunkName": {
@@ -17,7 +17,7 @@
   "assets": [
     {
       "name": "auth.js",
-      "size": 16467,
+      "size": 16543,
       "chunks": [
         "auth"
       ],
@@ -26,7 +26,7 @@
       ],
       "info": {
       },
-      "emitted": false
+      "emitted": true
     },
     {
       "name": "index.js",
@@ -52,7 +52,7 @@
       ],
       "info": {
       },
-      "emitted": true
+      "emitted": false
     }
   ],
   "filteredAssets": 0,
@@ -135,17 +135,17 @@
   "chunks": [
     {
       "id": "auth",
-      "rendered": false,
+      "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 4689,
+      "size": 4718,
       "names": [
         "auth"
       ],
       "files": [
         "auth.js"
       ],
-      "hash": "740dd8da539fbccdb5ed",
+      "hash": "1bd8011739142920656d",
       "siblings": [
       ],
       "parents": [
@@ -161,9 +161,9 @@
           "name": "./src/auth.ts",
           "index": 4,
           "index2": 4,
-          "size": 1558,
+          "size": 1587,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -243,7 +243,7 @@
               "moduleName": "./src/auth.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "19:19-27"
+              "loc": "20:19-27"
             },
             {
               "moduleId": "./src/index.ts",
@@ -538,7 +538,7 @@
               "moduleName": "./src/auth.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "19:19-27"
+              "loc": "20:19-27"
             },
             {
               "moduleId": "./src/index.ts",
@@ -725,7 +725,7 @@
     },
     {
       "id": "settings",
-      "rendered": true,
+      "rendered": false,
       "initial": true,
       "entry": true,
       "size": 17712,
@@ -753,7 +753,7 @@
           "index2": 3,
           "size": 11544,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -918,7 +918,7 @@
               "moduleName": "./src/auth.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "19:19-27"
+              "loc": "20:19-27"
             },
             {
               "moduleId": "./src/index.ts",
@@ -1111,9 +1111,9 @@
       "name": "./src/auth.ts",
       "index": 4,
       "index2": 4,
-      "size": 1558,
+      "size": 1587,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1193,7 +1193,7 @@
       "index2": 3,
       "size": 11544,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1358,7 +1358,7 @@
           "moduleName": "./src/auth.ts",
           "type": "harmony import specifier",
           "userRequest": "./trello-util",
-          "loc": "19:19-27"
+          "loc": "20:19-27"
         },
         {
           "moduleId": "./src/index.ts",
