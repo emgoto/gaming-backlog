@@ -4,9 +4,9 @@
   "warnings": [
   ],
   "version": "4.41.0",
-  "hash": "31a472aa04cee66ff043",
-  "time": 134,
-  "builtAt": 1580522053500,
+  "hash": "edca5102269971bc75c3",
+  "time": 148,
+  "builtAt": 1580524143639,
   "publicPath": "",
   "outputPath": "/Users/emma/src/trello-game-backlog/docs/js",
   "assetsByChunkName": {
@@ -43,7 +43,7 @@
     },
     {
       "name": "settings.js",
-      "size": 50285,
+      "size": 50292,
       "chunks": [
         "settings"
       ],
@@ -728,14 +728,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 17729,
+      "size": 17732,
       "names": [
         "settings"
       ],
       "files": [
         "settings.js"
       ],
-      "hash": "715801fee62b0656895d",
+      "hash": "74140bc7a652b240853a",
       "siblings": [
       ],
       "parents": [
@@ -751,7 +751,7 @@
           "name": "./src/settings.ts",
           "index": 2,
           "index2": 3,
-          "size": 11511,
+          "size": 11514,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -1191,7 +1191,7 @@
       "name": "./src/settings.ts",
       "index": 2,
       "index2": 3,
-      "size": 11511,
+      "size": 11514,
       "cacheable": true,
       "built": true,
       "optional": false,

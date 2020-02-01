@@ -6,8 +6,8 @@ declare const Sortable: any;
 import { getSteamUser, setSteamUser, getSteamGameCache, createCard, createCards, getToken, setSteamGameCache } from './trello-util';
 import { getOwnedGames, SteamUser, SteamGame, getAppId, getGame } from './steam-util';
 
-const serverURL2 = 'https://trello-game-backlog.herokuapp.com';
-const serverURL = 'http://backlog.emgoto.com';
+// const serverURL2 = 'https://trello-game-backlog.herokuapp.com';
+const serverURL = 'https://backlog.emgoto.com';
 const clientURL = 'https://emgoto.github.io/gaming-backlog';
 
 // Cache for games while user has the settings page open
@@ -40,7 +40,7 @@ const ADD_GAMES = '#add-games-button';
 
 function onSteamAuth() {
   var signedURL = t.signUrl(`${clientURL}/settings.html`);
-  window.location.href = `${serverURL2}/done?signed=${encodeURIComponent(signedURL)}`;
+  window.location.href = `${serverURL}/done?signed=${encodeURIComponent(signedURL)}`;
   t.sizeTo(200);
 }
 
