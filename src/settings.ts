@@ -128,6 +128,7 @@ const renderTable = (games: SteamGame[] | void) => {
   if (!games || games.length < 1) {
     document.querySelector(PROFILE_ERROR).classList.remove('hidden');
     document.querySelector(ADD_GAMES_WRAPPER).classList.add('hidden');
+    t.sizeTo('#wrapper');
     return null;
   }
 

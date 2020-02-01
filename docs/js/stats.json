@@ -4,9 +4,9 @@
   "warnings": [
   ],
   "version": "4.41.0",
-  "hash": "edca5102269971bc75c3",
-  "time": 148,
-  "builtAt": 1580524143639,
+  "hash": "8d96790b00c202c57505",
+  "time": 167,
+  "builtAt": 1580524510047,
   "publicPath": "",
   "outputPath": "/Users/emma/src/trello-game-backlog/docs/js",
   "assetsByChunkName": {
@@ -43,7 +43,7 @@
     },
     {
       "name": "settings.js",
-      "size": 50292,
+      "size": 50236,
       "chunks": [
         "settings"
       ],
@@ -315,7 +315,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "158:4-14"
+              "loc": "159:4-14"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -324,7 +324,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "217:36-48"
+              "loc": "218:36-48"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -333,7 +333,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "229:14-26"
+              "loc": "230:14-26"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -342,7 +342,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "242:4-15"
+              "loc": "243:4-15"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -351,7 +351,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "250:32-44"
+              "loc": "251:32-44"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -360,7 +360,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "252:33-50"
+              "loc": "253:33-50"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -369,7 +369,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "262:33-41"
+              "loc": "263:33-41"
             },
             {
               "moduleId": "./src/steam-util.ts",
@@ -387,7 +387,7 @@
               "moduleName": "./src/steam-util.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "35:32-44"
+              "loc": "34:32-44"
             },
             {
               "moduleId": "./src/steam-util.ts",
@@ -396,7 +396,7 @@
               "moduleName": "./src/steam-util.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "48:15-32"
+              "loc": "47:15-32"
             }
           ],
           "providedExports": [
@@ -610,7 +610,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "158:4-14"
+              "loc": "159:4-14"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -619,7 +619,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "217:36-48"
+              "loc": "218:36-48"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -628,7 +628,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "229:14-26"
+              "loc": "230:14-26"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -637,7 +637,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "242:4-15"
+              "loc": "243:4-15"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -646,7 +646,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "250:32-44"
+              "loc": "251:32-44"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -655,7 +655,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "252:33-50"
+              "loc": "253:33-50"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -664,7 +664,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "262:33-41"
+              "loc": "263:33-41"
             },
             {
               "moduleId": "./src/steam-util.ts",
@@ -682,7 +682,7 @@
               "moduleName": "./src/steam-util.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "35:32-44"
+              "loc": "34:32-44"
             },
             {
               "moduleId": "./src/steam-util.ts",
@@ -691,7 +691,7 @@
               "moduleName": "./src/steam-util.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "48:15-32"
+              "loc": "47:15-32"
             }
           ],
           "providedExports": [
@@ -728,14 +728,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 17732,
+      "size": 17712,
       "names": [
         "settings"
       ],
       "files": [
         "settings.js"
       ],
-      "hash": "74140bc7a652b240853a",
+      "hash": "5bf057a17db58c965cb7",
       "siblings": [
       ],
       "parents": [
@@ -751,7 +751,7 @@
           "name": "./src/settings.ts",
           "index": 2,
           "index2": 3,
-          "size": 11514,
+          "size": 11544,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -791,7 +791,7 @@
           "name": "./src/steam-util.ts",
           "index": 3,
           "index2": 2,
-          "size": 3087,
+          "size": 3037,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -840,7 +840,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./steam-util",
-              "loc": "174:18-26"
+              "loc": "175:18-26"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -849,7 +849,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./steam-util",
-              "loc": "181:23-30"
+              "loc": "182:23-30"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -858,7 +858,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./steam-util",
-              "loc": "230:28-41"
+              "loc": "231:28-41"
             }
           ],
           "providedExports": [
@@ -990,7 +990,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "158:4-14"
+              "loc": "159:4-14"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -999,7 +999,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "217:36-48"
+              "loc": "218:36-48"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -1008,7 +1008,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "229:14-26"
+              "loc": "230:14-26"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -1017,7 +1017,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "242:4-15"
+              "loc": "243:4-15"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -1026,7 +1026,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "250:32-44"
+              "loc": "251:32-44"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -1035,7 +1035,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "252:33-50"
+              "loc": "253:33-50"
             },
             {
               "moduleId": "./src/settings.ts",
@@ -1044,7 +1044,7 @@
               "moduleName": "./src/settings.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "262:33-41"
+              "loc": "263:33-41"
             },
             {
               "moduleId": "./src/steam-util.ts",
@@ -1062,7 +1062,7 @@
               "moduleName": "./src/steam-util.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "35:32-44"
+              "loc": "34:32-44"
             },
             {
               "moduleId": "./src/steam-util.ts",
@@ -1071,7 +1071,7 @@
               "moduleName": "./src/steam-util.ts",
               "type": "harmony import specifier",
               "userRequest": "./trello-util",
-              "loc": "48:15-32"
+              "loc": "47:15-32"
             }
           ],
           "providedExports": [
@@ -1191,7 +1191,7 @@
       "name": "./src/settings.ts",
       "index": 2,
       "index2": 3,
-      "size": 11514,
+      "size": 11544,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -1231,7 +1231,7 @@
       "name": "./src/steam-util.ts",
       "index": 3,
       "index2": 2,
-      "size": 3087,
+      "size": 3037,
       "cacheable": true,
       "built": false,
       "optional": false,
@@ -1280,7 +1280,7 @@
           "moduleName": "./src/settings.ts",
           "type": "harmony import specifier",
           "userRequest": "./steam-util",
-          "loc": "174:18-26"
+          "loc": "175:18-26"
         },
         {
           "moduleId": "./src/settings.ts",
@@ -1289,7 +1289,7 @@
           "moduleName": "./src/settings.ts",
           "type": "harmony import specifier",
           "userRequest": "./steam-util",
-          "loc": "181:23-30"
+          "loc": "182:23-30"
         },
         {
           "moduleId": "./src/settings.ts",
@@ -1298,7 +1298,7 @@
           "moduleName": "./src/settings.ts",
           "type": "harmony import specifier",
           "userRequest": "./steam-util",
-          "loc": "230:28-41"
+          "loc": "231:28-41"
         }
       ],
       "providedExports": [
@@ -1430,7 +1430,7 @@
           "moduleName": "./src/settings.ts",
           "type": "harmony import specifier",
           "userRequest": "./trello-util",
-          "loc": "158:4-14"
+          "loc": "159:4-14"
         },
         {
           "moduleId": "./src/settings.ts",
@@ -1439,7 +1439,7 @@
           "moduleName": "./src/settings.ts",
           "type": "harmony import specifier",
           "userRequest": "./trello-util",
-          "loc": "217:36-48"
+          "loc": "218:36-48"
         },
         {
           "moduleId": "./src/settings.ts",
@@ -1448,7 +1448,7 @@
           "moduleName": "./src/settings.ts",
           "type": "harmony import specifier",
           "userRequest": "./trello-util",
-          "loc": "229:14-26"
+          "loc": "230:14-26"
         },
         {
           "moduleId": "./src/settings.ts",
@@ -1457,7 +1457,7 @@
           "moduleName": "./src/settings.ts",
           "type": "harmony import specifier",
           "userRequest": "./trello-util",
-          "loc": "242:4-15"
+          "loc": "243:4-15"
         },
         {
           "moduleId": "./src/settings.ts",
@@ -1466,7 +1466,7 @@
           "moduleName": "./src/settings.ts",
           "type": "harmony import specifier",
           "userRequest": "./trello-util",
-          "loc": "250:32-44"
+          "loc": "251:32-44"
         },
         {
           "moduleId": "./src/settings.ts",
@@ -1475,7 +1475,7 @@
           "moduleName": "./src/settings.ts",
           "type": "harmony import specifier",
           "userRequest": "./trello-util",
-          "loc": "252:33-50"
+          "loc": "253:33-50"
         },
         {
           "moduleId": "./src/settings.ts",
@@ -1484,7 +1484,7 @@
           "moduleName": "./src/settings.ts",
           "type": "harmony import specifier",
           "userRequest": "./trello-util",
-          "loc": "262:33-41"
+          "loc": "263:33-41"
         },
         {
           "moduleId": "./src/steam-util.ts",
@@ -1502,7 +1502,7 @@
           "moduleName": "./src/steam-util.ts",
           "type": "harmony import specifier",
           "userRequest": "./trello-util",
-          "loc": "35:32-44"
+          "loc": "34:32-44"
         },
         {
           "moduleId": "./src/steam-util.ts",
@@ -1511,7 +1511,7 @@
           "moduleName": "./src/steam-util.ts",
           "type": "harmony import specifier",
           "userRequest": "./trello-util",
-          "loc": "48:15-32"
+          "loc": "47:15-32"
         }
       ],
       "providedExports": [
