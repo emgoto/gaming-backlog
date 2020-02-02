@@ -10,7 +10,7 @@ import { getOwnedGames, SteamUser, SteamGame, getAppId, getGame } from './steam-
 const serverURL = 'https://backlog.emgoto.com';
 const clientURL = 'https://emgoto.github.io/gaming-backlog';
 
-// Cache for games while user has the settings page open
+// Cache for all the games gotten from the endpoint
 let cachedGames;
 
 // Boolean for whether we are showing table or manual add
@@ -35,6 +35,7 @@ const MANUAL_ADD_NOT_FOUND  = '#manual-add-not-found';
 const MANUAL_ADD_CREATE = '#manual-add-create-wrapper';
 const MANUAL_ADD_LIST = '#manual-add-games-list';
 const MANUAL_ADD_NAME = '#manual-add-name-input';
+const SHOW_MORE_GAMES = '#show-more-games';
 
 const ADD_GAMES_WRAPPER = '#add-games-wrapper';
 const CONFIRM_GAME = '#confirm-game';
@@ -72,8 +73,8 @@ function showMeatballsMenu(token) {
       text: 'Refresh games',
       callback: async function (t2): Promise<void> {
         const games = await getOwnedGames(t);
-        renderTable(games);
         cachedGames = games;
+        renderTable(games);
         t2.closePopup();
       },
     };
@@ -125,11 +126,21 @@ const renderSteam = async (steamUser: SteamUser | void) => {
   }
 }
 
+const showMoreGames = async () => {
+  const showMoreGamesButton: HTMLButtonElement = document.querySelector(SHOW_MORE_GAMES);
+  showMoreGamesButton.disabled = true;
+  const games = await getOwnedGames(t);
+  cachedGames = games;
+  renderTable(games);
+}
+
 const renderTable = (games: SteamGame[] | void) => {
+  console.log('rendering games', games && games.length);
   isShowingManualAdd = false;
 
   document.querySelector(MANUAL_ADD).classList.add('hidden');
   document.querySelector(GAME_TABLE).classList.remove('hidden');
+  document.querySelector(SHOW_MORE_GAMES).classList.add('hidden');
 
   if (!games || games.length < 1) {
     document.querySelector(PROFILE_ERROR).classList.remove('hidden');
@@ -145,7 +156,7 @@ const renderTable = (games: SteamGame[] | void) => {
   const tableBody = table.getElementsByTagName('tbody')[0];
 
   // Remove all rows and start over
-  $("#table_of_items tbody tr").remove();
+  tableBody.innerHTML = '';
 
   games.forEach(game => {
     const newRow = tableBody.insertRow(-1);
@@ -159,6 +170,13 @@ const renderTable = (games: SteamGame[] | void) => {
   });
 
   Sortable.initTable(table);
+
+  // If we haven't used API while this window has been open, we know user has more games
+  if (!cachedGames && games.length > 48) {
+    const showMoreGamesButton: HTMLButtonElement = document.querySelector(SHOW_MORE_GAMES);
+    showMoreGamesButton.classList.remove('hidden');
+    showMoreGamesButton.onclick = showMoreGames;
+  }
   t.sizeTo('#wrapper');
 }
 
