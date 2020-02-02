@@ -16,6 +16,9 @@ let cachedGames;
 // Boolean for whether we are showing table or manual add
 let isShowingManualAdd = false;
 
+// Boolean for while we are fetching games, we don't want table to render
+let isInitialRenderFetching = false;
+
 // Selectors
 const MEATBALL_MENU_ID = 'meatball-menu';
 const STEAM_AUTH_ID = 'steam-auth';
@@ -263,9 +266,12 @@ async function onFirstRender() {
   const displayName = urlParams.get('name'); 
   const avatarUrl = urlParams.get('avatar'); 
 
+  isInitialRenderFetching = true;
   await setSteamUser(t, {id, displayName, avatarUrl});
   
   cachedGames = await getOwnedGames(t, id);
+
+  isInitialRenderFetching = false;
 }
 
 async function onAddGames() {
@@ -302,7 +308,7 @@ t.render(async function () {
 
   const steamGames = await getSteamGameCache(t);
 
-  if (steamUser) {
+  if (steamUser && !isInitialRenderFetching) {
     renderTable(cachedGames || steamGames);
     const addButton: HTMLButtonElement = document.querySelector(ADD_GAMES);
     addButton.onclick = onAddGames;
