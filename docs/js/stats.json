@@ -4,9 +4,9 @@
   "warnings": [
   ],
   "version": "4.41.0",
-  "hash": "526a4076c4d3f10b53f9",
-  "time": 302,
-  "builtAt": 1580617586263,
+  "hash": "7826952bafba307953ef",
+  "time": 37,
+  "builtAt": 1580629036667,
   "publicPath": "",
   "outputPath": "/Users/emma/src/trello-game-backlog/docs/js",
   "assetsByChunkName": {
@@ -39,7 +39,7 @@
       ],
       "info": {
       },
-      "emitted": false
+      "emitted": true
     },
     {
       "name": "settings.js",
@@ -52,7 +52,7 @@
       ],
       "info": {
       },
-      "emitted": true
+      "emitted": false
     }
   ],
   "filteredAssets": 0,
@@ -211,14 +211,14 @@
             "settings",
             "auth"
           ],
-          "issuer": "/Users/emma/src/trello-game-backlog/node_modules/awesome-typescript-loader/dist/entry.js!/Users/emma/src/trello-game-backlog/src/index.ts",
-          "issuerId": "./src/index.ts",
-          "issuerName": "./src/index.ts",
+          "issuer": "/Users/emma/src/trello-game-backlog/node_modules/awesome-typescript-loader/dist/entry.js!/Users/emma/src/trello-game-backlog/src/settings.ts",
+          "issuerId": "./src/settings.ts",
+          "issuerName": "./src/settings.ts",
           "issuerPath": [
             {
-              "id": "./src/index.ts",
-              "identifier": "/Users/emma/src/trello-game-backlog/node_modules/awesome-typescript-loader/dist/entry.js!/Users/emma/src/trello-game-backlog/src/index.ts",
-              "name": "./src/index.ts"
+              "id": "./src/settings.ts",
+              "identifier": "/Users/emma/src/trello-game-backlog/node_modules/awesome-typescript-loader/dist/entry.js!/Users/emma/src/trello-game-backlog/src/settings.ts",
+              "name": "./src/settings.ts"
             }
           ],
           "failed": false,
@@ -439,7 +439,7 @@
     },
     {
       "id": "index",
-      "rendered": false,
+      "rendered": true,
       "initial": true,
       "entry": true,
       "size": 5577,
@@ -449,7 +449,7 @@
       "files": [
         "index.js"
       ],
-      "hash": "5e5a2ba8168847e2605e",
+      "hash": "7d57c5202a796ad3d0e0",
       "siblings": [
       ],
       "parents": [
@@ -467,7 +467,7 @@
           "index2": 1,
           "size": 2446,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -515,14 +515,14 @@
             "settings",
             "auth"
           ],
-          "issuer": "/Users/emma/src/trello-game-backlog/node_modules/awesome-typescript-loader/dist/entry.js!/Users/emma/src/trello-game-backlog/src/index.ts",
-          "issuerId": "./src/index.ts",
-          "issuerName": "./src/index.ts",
+          "issuer": "/Users/emma/src/trello-game-backlog/node_modules/awesome-typescript-loader/dist/entry.js!/Users/emma/src/trello-game-backlog/src/settings.ts",
+          "issuerId": "./src/settings.ts",
+          "issuerName": "./src/settings.ts",
           "issuerPath": [
             {
-              "id": "./src/index.ts",
-              "identifier": "/Users/emma/src/trello-game-backlog/node_modules/awesome-typescript-loader/dist/entry.js!/Users/emma/src/trello-game-backlog/src/index.ts",
-              "name": "./src/index.ts"
+              "id": "./src/settings.ts",
+              "identifier": "/Users/emma/src/trello-game-backlog/node_modules/awesome-typescript-loader/dist/entry.js!/Users/emma/src/trello-game-backlog/src/settings.ts",
+              "name": "./src/settings.ts"
             }
           ],
           "failed": false,
@@ -743,7 +743,7 @@
     },
     {
       "id": "settings",
-      "rendered": true,
+      "rendered": false,
       "initial": true,
       "entry": true,
       "size": 18619,
@@ -771,7 +771,7 @@
           "index2": 3,
           "size": 12451,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -904,14 +904,14 @@
             "settings",
             "auth"
           ],
-          "issuer": "/Users/emma/src/trello-game-backlog/node_modules/awesome-typescript-loader/dist/entry.js!/Users/emma/src/trello-game-backlog/src/index.ts",
-          "issuerId": "./src/index.ts",
-          "issuerName": "./src/index.ts",
+          "issuer": "/Users/emma/src/trello-game-backlog/node_modules/awesome-typescript-loader/dist/entry.js!/Users/emma/src/trello-game-backlog/src/settings.ts",
+          "issuerId": "./src/settings.ts",
+          "issuerName": "./src/settings.ts",
           "issuerPath": [
             {
-              "id": "./src/index.ts",
-              "identifier": "/Users/emma/src/trello-game-backlog/node_modules/awesome-typescript-loader/dist/entry.js!/Users/emma/src/trello-game-backlog/src/index.ts",
-              "name": "./src/index.ts"
+              "id": "./src/settings.ts",
+              "identifier": "/Users/emma/src/trello-game-backlog/node_modules/awesome-typescript-loader/dist/entry.js!/Users/emma/src/trello-game-backlog/src/settings.ts",
+              "name": "./src/settings.ts"
             }
           ],
           "failed": false,
@@ -1180,7 +1180,7 @@
       "index2": 1,
       "size": 2446,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1220,7 +1220,7 @@
       "index2": 3,
       "size": 12451,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1353,14 +1353,14 @@
         "settings",
         "auth"
       ],
-      "issuer": "/Users/emma/src/trello-game-backlog/node_modules/awesome-typescript-loader/dist/entry.js!/Users/emma/src/trello-game-backlog/src/index.ts",
-      "issuerId": "./src/index.ts",
-      "issuerName": "./src/index.ts",
+      "issuer": "/Users/emma/src/trello-game-backlog/node_modules/awesome-typescript-loader/dist/entry.js!/Users/emma/src/trello-game-backlog/src/settings.ts",
+      "issuerId": "./src/settings.ts",
+      "issuerName": "./src/settings.ts",
       "issuerPath": [
         {
-          "id": "./src/index.ts",
-          "identifier": "/Users/emma/src/trello-game-backlog/node_modules/awesome-typescript-loader/dist/entry.js!/Users/emma/src/trello-game-backlog/src/index.ts",
-          "name": "./src/index.ts"
+          "id": "./src/settings.ts",
+          "identifier": "/Users/emma/src/trello-game-backlog/node_modules/awesome-typescript-loader/dist/entry.js!/Users/emma/src/trello-game-backlog/src/settings.ts",
+          "name": "./src/settings.ts"
         }
       ],
       "failed": false,

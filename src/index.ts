@@ -8,7 +8,7 @@ TrelloPowerUp.initialize({
     return [{
       text: 'Gaming Backlog',
       icon: {
-        dark: `${window.location}img/icon-white.svg`,
+        dark: `${window.location}img/icon-light.svg`,
         light: `${window.location}img/icon-dark.svg`,
       },
       callback: async (t) => {
