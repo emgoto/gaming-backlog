@@ -7,6 +7,10 @@ TrelloPowerUp.initialize({
   'board-buttons': function (t) {
     return [{
       text: 'Gaming Backlog',
+      icon: {
+        dark: `${window.location}img/icon-white.svg`,
+        light: `${window.location}img/icon-dark.svg`,
+      },
       callback: async (t) => {
         const token = await getToken(t);
         if (!token) {
