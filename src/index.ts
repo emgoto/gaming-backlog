@@ -6,7 +6,7 @@ import { getToken } from './trello-util';
 TrelloPowerUp.initialize({
   'board-buttons': function (t) {
     return [{
-      text: 'Backlog',
+      text: 'Gaming Backlog',
       callback: async (t) => {
         const token = await getToken(t);
         if (!token) {

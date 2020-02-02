@@ -4,9 +4,9 @@
   "warnings": [
   ],
   "version": "4.41.0",
-  "hash": "2a4a4e9d89a775738ae6",
-  "time": 179,
-  "builtAt": 1580607460291,
+  "hash": "441c94415ddef91ebdbb",
+  "time": 39,
+  "builtAt": 1580611426683,
   "publicPath": "",
   "outputPath": "/Users/emma/src/trello-game-backlog/docs/js",
   "assetsByChunkName": {
@@ -17,7 +17,7 @@
   "assets": [
     {
       "name": "auth.js",
-      "size": 16543,
+      "size": 16612,
       "chunks": [
         "auth"
       ],
@@ -26,11 +26,11 @@
       ],
       "info": {
       },
-      "emitted": false
+      "emitted": true
     },
     {
       "name": "index.js",
-      "size": 18058,
+      "size": 18073,
       "chunks": [
         "index"
       ],
@@ -52,7 +52,7 @@
       ],
       "info": {
       },
-      "emitted": true
+      "emitted": false
     }
   ],
   "filteredAssets": 0,
@@ -135,17 +135,17 @@
   "chunks": [
     {
       "id": "auth",
-      "rendered": false,
+      "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 4718,
+      "size": 4749,
       "names": [
         "auth"
       ],
       "files": [
         "auth.js"
       ],
-      "hash": "1bd8011739142920656d",
+      "hash": "3af1e4404ccf06147dd5",
       "siblings": [
       ],
       "parents": [
@@ -161,9 +161,9 @@
           "name": "./src/auth.ts",
           "index": 4,
           "index2": 4,
-          "size": 1587,
+          "size": 1618,
           "cacheable": true,
-          "built": false,
+          "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -442,14 +442,14 @@
       "rendered": false,
       "initial": true,
       "entry": true,
-      "size": 5395,
+      "size": 5402,
       "names": [
         "index"
       ],
       "files": [
         "index.js"
       ],
-      "hash": "f518db8f7462dfbb9c59",
+      "hash": "610d706fd17e4fa5b73a",
       "siblings": [
       ],
       "parents": [
@@ -465,7 +465,7 @@
           "name": "./src/index.ts",
           "index": 0,
           "index2": 1,
-          "size": 2264,
+          "size": 2271,
           "cacheable": true,
           "built": false,
           "optional": false,
@@ -743,7 +743,7 @@
     },
     {
       "id": "settings",
-      "rendered": true,
+      "rendered": false,
       "initial": true,
       "entry": true,
       "size": 17800,
@@ -771,7 +771,7 @@
           "index2": 3,
           "size": 11632,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1138,9 +1138,9 @@
       "name": "./src/auth.ts",
       "index": 4,
       "index2": 4,
-      "size": 1587,
+      "size": 1618,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1178,7 +1178,7 @@
       "name": "./src/index.ts",
       "index": 0,
       "index2": 1,
-      "size": 2264,
+      "size": 2271,
       "cacheable": true,
       "built": false,
       "optional": false,
@@ -1220,7 +1220,7 @@
       "index2": 3,
       "size": 11632,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
