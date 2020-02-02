@@ -185,9 +185,40 @@ td, thead, table, th {
 #add-games-button {
     height: 40px;
     margin-top: 0;
+    min-width: 110px;
+}
+
+#add-games-button-wrapper {
+    min-width: 152px;
+    display:flex;
+    justify-content:flex-end;
 }
 
 #profile-error-message {
     color: #C0C0C0;
     margin: 16px 80px;
+}
+
+/* spinner CSS to https://codepen.io/benrugg/pen/eKHkL */
+.loadingSpinner {
+  border: 3px solid #FFF;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  width: 12px;
+  height: 12px;
+  opacity: .8;
+  border-radius: 50%;
+  animation: loadingSpinner 1s infinite linear;
+  -webkit-animation: loadingSpinner 1s infinite linear;
+  margin: 0 auto;
+}
+
+@keyframes loadingSpinner {
+    from { transform: rotate(0deg)   }
+    to   { transform: rotate(360deg) }
+}
+
+@-webkit-keyframes loadingSpinner {
+    from { -webkit-transform: rotate(0deg)   }
+    to   { -webkit-transform: rotate(360deg) }
 }

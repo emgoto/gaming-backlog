@@ -37,6 +37,8 @@ const ADD_GAMES_WRAPPER = '#add-games-wrapper';
 const CONFIRM_GAME = '#confirm-game';
 const ADD_GAMES_LIST = '#add-games-list';
 const ADD_GAMES = '#add-games-button';
+const ADD_GAMES_TEXT = '#add-games-button .addGamesText';
+const ADD_GAMES_SPINNER = '#add-games-button .loadingSpinner';
 
 function onSteamAuth() {
   var signedURL = t.signUrl(`${clientURL}/settings.html`);
@@ -266,8 +268,14 @@ async function onFirstRender() {
   cachedGames = await getOwnedGames(t, id);
 }
 
-function onAddGames() {
-  // TODO: Show spinner on button while cards are being created
+async function onAddGames() {
+  const addButton: HTMLButtonElement = document.querySelector(ADD_GAMES);
+  const addButtonSpinner: HTMLDivElement = document.querySelector(ADD_GAMES_SPINNER);
+  const addButtonText: HTMLDivElement = document.querySelector(ADD_GAMES_TEXT);
+  
+  addButton.disabled = true;
+  addButtonSpinner.classList.remove('hidden');
+  addButtonText.classList.add('hidden');
   var checkedBoxes: NodeListOf<HTMLInputElement> = document.querySelectorAll('input:checked');
   const games = [];
 
@@ -278,8 +286,10 @@ function onAddGames() {
   const select: HTMLSelectElement  = document.querySelector(ADD_GAMES_LIST);
   const listId = select.value;
 
-  createCards(t, listId, games);
-  // TODO: remove spinner on button
+  await createCards(t, listId, games);
+  addButton.disabled = false;
+  addButtonSpinner.classList.add('hidden');
+  addButtonText.classList.remove('hidden');
 }
 
 // t.render doesn't get called after we redirect back from authenticating with Steam
@@ -294,7 +304,7 @@ t.render(async function () {
 
   if (steamUser) {
     renderTable(cachedGames || steamGames);
-    const addButton: HTMLDivElement = document.querySelector(ADD_GAMES);
+    const addButton: HTMLButtonElement = document.querySelector(ADD_GAMES);
     addButton.onclick = onAddGames;
     await populateSelect(ADD_GAMES_LIST);
     document.querySelector(GAME_TABLE).classList.remove('hidden');
