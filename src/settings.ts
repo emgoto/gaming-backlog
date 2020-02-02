@@ -57,7 +57,8 @@ function showMeatballsMenu(token) {
     {
       text: 'Add owned games',
       callback: async function (t2): Promise<void> {
-        renderTable(cachedGames);
+        const games = cachedGames ? cachedGames : await getSteamGameCache(t);
+        renderTable(games);
         t2.closePopup();
       },
     };
