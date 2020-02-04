@@ -9,6 +9,8 @@ import { getOwnedGames, SteamUser, SteamGame, getAppId, getGame } from './steam-
 // const serverURL2 = 'https://trello-game-backlog.herokuapp.com';
 const serverURL = 'https://backlog.emgoto.com';
 const clientURL = 'https://emgoto.github.io/gaming-backlog';
+// const serverURL = 'http://localhost:3000';
+// const clientURL = 'https://580230a2.ngrok.io/docs';
 
 // Cache for all the games gotten from the endpoint
 let cachedGames;

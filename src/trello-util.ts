@@ -9,6 +9,8 @@ type List = {
     name: string;
 };
 
+const CARD_API = `https://api.trello.com/1/cards`;
+
 export const getToken = (t): Promise<string | void> => t.get('member', 'private', 'authToken');
 export const setToken = (t, token): Promise<void> => t.set('member', 'private', 'authToken', token);
 
@@ -45,12 +47,14 @@ export const createCard = async (t: any, listId: string, game: SteamGame, token:
         urlSource: `https://steamcdn-a.akamaihd.net/steam/apps/${game.id}/header.jpg`,
     };
 
-    const url = `https://api.trello.com/1/cards`;
-
     // TODO: Handling if Trello returns a 429 for too many requests
     // 300 requests per 10 seconds for each API key
     // 100 requests per 10 second interval for each token
-    return axios.post(url, data).then(response => response.data).catch((e) => {
+    return axios.post(CARD_API, data)
+    .then(response => {
+        addAttachment(t, response.data.id, game, token);
+    })
+    .catch((e) => {
         console.log('Error creating card', e);
         if (e && e.response && e.response.status && e.response.status === 401) {
             // Token no longer valid, delete
@@ -73,3 +77,21 @@ export const createCards = async (t: any, listId: string, games: SteamGame[]): P
         return true;
     }));
 };
+
+export const addAttachment = async (t, cardId: string, game: SteamGame, token: string): Promise<void> => {
+    const data = {
+        name: `${game.name} on Steam`,
+        // Note this is not 100% foolproof - does not work for my copy of Arma 2 (ID different to Store ID)
+        url: `https://store.steampowered.com/app/${game.id}/`,
+        token,
+        key,
+    };
+
+    return axios.post(`${CARD_API}/${cardId}/attachments`, data).then(response => response.data).catch((e) => {
+        console.log('Error adding attachment to card', e);
+        if (e && e.response && e.response.status && e.response.status === 401) {
+            // Token no longer valid, delete
+            setToken(t, undefined);
+        }
+    });
+}
