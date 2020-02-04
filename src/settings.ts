@@ -135,7 +135,6 @@ const showMoreGames = async () => {
 }
 
 const renderTable = (games: SteamGame[] | void) => {
-  console.log('rendering games', games && games.length);
   isShowingManualAdd = false;
 
   document.querySelector(MANUAL_ADD).classList.add('hidden');
