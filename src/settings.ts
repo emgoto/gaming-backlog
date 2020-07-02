@@ -6,8 +6,8 @@ declare const Sortable: any;
 import { getSteamUser, setSteamUser, getSteamGameCache, createCard, createCards, getToken, setSteamGameCache } from './trello-util';
 import { getOwnedGames, SteamUser, SteamGame, getAppId, getGame } from './steam-util';
 
-// const serverURL2 = 'https://trello-game-backlog.herokuapp.com';
-const serverURL = 'https://backlog.emgoto.com';
+const serverURL = 'https://trello-game-backlog.herokuapp.com';
+// const serverURL = 'https://backlog.emgoto.com';
 const clientURL = 'https://emgoto.github.io/gaming-backlog';
 // const serverURL = 'http://localhost:3000';
 // const clientURL = 'https://580230a2.ngrok.io/docs';
