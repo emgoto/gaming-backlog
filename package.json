@@ -42,6 +42,6 @@
   "dependencies": {
     "@openid/appauth": "^1.2.6",
     "steam-weblogin": "^1.0.1",
-    "serialize-javascript": ">=2.1.1"
+    "serialize-javascript": ">=3.1.0"
   }
 }
